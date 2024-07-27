@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Vaishnavi</title>
+    <link rel="icon" href="./images/VAISHNAVI DHAGE (1).png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    
+</head>
+<body class="overflow-x-hidden leading-8 dark:bg-darkTheme dark:text-white">
+
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+
+
+
+    <nav class="w-full fixed px-5 lg:px-8 xl:lg:px[8%] py-4 flex items-start justify-between z-50">
+        <img src="./images/VAISHNAVI DHAGE (1).png" alt="logo" class="w-16 cursor-pointer mr-14">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 cursor-pointer dark:border dark:border-white/50 dark:bg-transparent">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+        <button onclick="toggleTheme()"><img src="./images/moon_icon.png" alt="" class="w-6 py-5 dark:hidden"></button>
+        <button onclick="toggleTheme()"><img src="./images/sun_icon.png" alt="" class="w-6 py-5 hidden dark:block"></button>
+
+        <a href="#contact"
+        class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 dark:border-white/50">Contact
+            <img src="./images/arrow-icon.png" alt="" class="w-3 dark:hidden">
+            <img src="./images/arrow-icon-dark.png" alt="" class="w-3 hidden dark:block">
+        </a>
+        <button class="block md:hidden ml-3" onclick="openMenu()">
+            <img src="./images/menu-black.png" alt="" class="w-6 dark:hidden">
+            <img src="./images/menu-white.png" alt="" class="w-6 hidden dark:block">
+        </button>
+
+        </div>
+
+
+        <!------mobile view-->
+
+        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 buttom-0 w-64 z-50 h-screen  bg-rose-50 transition duration-500 cursor-pointer dark:bg-[#2a004a] dark:text-white">
+
+
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer dark:hidden" >
+                <img src="./images/close-white.png" alt="" class="w-5 cursor-pointer hidden dark:block" >
+            </div>
+            <li><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About me</a></li>
+            <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="closeMenu()">My Projects</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+        </ul>
+    </nav>
+
+<!-----header------>
+<div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+    <img src="./images/photo1.jpg" alt="" class= "rounded-full w-32 ">
+    <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3">Hello! I'm Vaishnavi Dhage <img src="./images/hand-icon.png" alt="" class="w-6"></h3>
+    <h1 class="text-3xl sm:text-6xl lg:text-[-66px]">Full Stack Developer</h1>
+    <p class="max-w-2xl mx-auto">Hi, I'm Vaishnavi, a passionate programmer and a lifelong learner. I enjoy working on challenging projects that push me to expand my knowledge and skills.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-trasparent">Contact Me <img src="./images/right-arrow-white.png" alt="" class="w-4"></a>
+            <a href="./Resume.pdf" download class="px-10 py-3 border rounded-full border-grey-500  text-wrap flex items-center gap-2 bg-white dark:text-black">My Resume <img src="./images/download-icon.png" alt="" class="w-4"></a>
+        </div>
+</div>
+
+<!----------about me-->
+<div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+    <h2 class="text-center text-5xl">About Me</h2>
+
+    <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+        <div class="max-w-max mx-auto relative">
+            <img src="./images/my photo.jpg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+
+            <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0,15)] flex items-center justify-content">
+                <img src="./images/Full sTACK dEVELOPER.png" alt="" class="w-full animate-spin_slow">
+                <img src="./images/dev-icon.png" alt="" class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+
+            </div>
+        </div>
+        <div class="flex-1">
+            <p class="mb-10 max-w-2xl">As a computer science student, I'm seeking career opportunities to apply my skills and knowledge in a professional setting. My goal is to join a dynamic team, contribute to impactful projects, grow as a developer, and create innovative solutions in technology. I look forward to collaborating with like-minded professionals. Feel free to reach out for potential collaboration or inquiries. Let's build something incredible together!
+            </p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
+                <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                    <img src="./images/edu-icon.png" alt="" class="w-7 mt-3 dark:hidden">
+                    <img src="./images/edu-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block">
+                    <h3 class="m-4 font-semibold text-grey-700 dark:text-white">Education</h3>
+                    <p clsss="text-grey-600 text-sm dark:text-white/80">B-Tech in Computer Science And Engineering </p>
+                    <p clsss="text-grey-600 text-sm dark:text-white/80">From "G. H. Raisoni Institute Of Engineering And Technology, Nagpur" </p>
+                </li>
+                <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                    <img src="./images/project-icon.png" alt="" class="w-7 mt-3 dark:hidden">
+                    <img src="./images/project-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block">
+                    <h3 class="m-4 font-semibold text-grey-700 dark:text-white">Projects</h3>
+                    <p clsss="text-grey-600 text-sm dark:text-white/80">Built 10+ Projects</p>
+                    
+                </li>
+            </ul>
+            <h4 class="py-5 dark:text-white/80">Tools I Use</h4>
+            <ul class="flex items-center gap-3 sm:gap-5">
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="./images/vscode.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="./images/mongodb.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="./images/vercel.png" alt="" class="w-5 sm:w-7 dark:hidden" >
+                    <img src="./images/vercel.black.png" alt="" class="w-5 sm:w-7 hidden dark:block">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="./images/github.png" alt="" class="w-5 sm:w-7 dark:hidden" >
+                    <img src="./images/github-black.png" alt="" class="w-5 sm:w-7 hidden dark:block dark:w-11">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="./images/canva.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="./images/pycharm.png" alt="" class="w-6 sm:w-7">
+                </li>
+            </ul>
+
+
+
+        </div>
+    </div>
+</div>
+
+<!--Skills-->
+
+<div id="skills" class="w-full px-[12%] py-10 scroll-mt-20">
+    <h2 class="text-center text-5xl">My Skills</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I am a skilled and versatile student with a strong foundation in HTML5, CSS3, JavaScript, tailwind CSS, BootStrap, React JS, C, C++, Python, Java, Django & Mongo DB</p>
+
+    <div class="grid grid-cols-auto gap-6 my-10">
+        <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white ">
+            <img src="./images/coding-icon.png" alt="" class="w-10 rounded-xl">
+            <h3 class="text-lg my-3 text-gray-700 dark:text-white">Languages</h3>
+            <p class="text-sm text-gray-600 leading-5 dark:text-white/80">C <br>C++<br>Python <br>JAVA</p>
+        </div>
+        <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+            <img src="./images/web-icon.png" alt="" class="w-10 rounded-xl">
+            <h3 class="text-lg my-3 text-gray-700 dark:text-white">Frontend</h3>
+            <p class="text-sm text-gray-600 leading-5 dark:text-white/80">HTML5, CSS3, JavaScript, <br>Tailwind CSS, BootStrap<br>React JS, DJango</p>
+        </div>
+        <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
+            <img src="./images/database-icon.png" alt="" class="w-10 rounded-xl">
+            <h3 class="text-lg my-3 text-gray-700 dark:text-white">Backend</h3>
+            <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Mongo DB <br>SQL <br>Next JS</p>
+        </div>
+    </div>
+</div>
+<!--projects-->
+<div id="projects" class="w-full px-[12%] py-10 scroll-mt-20">
+    <h2 class="text-center text-5xl">My Projects</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Welcome to my portfolio! <br>Explore a collection of projects showcasing my expertise in development.</p>
+    <h4 class="text-center mb-2 text-lg">My Latest Projects</h4>
+    <div class="grid grid-cols-auto my-10 gap-5 dark:text-black">
+         <div class="aspect-square bg-[url('./images/empManage.jpeg')] bg-no-repeat bg-cover bg bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2-translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                
+                <div>
+                    <h2 class="font-semibold">Employee management system</h2>
+                    <p  class="text-sm text-gray-700">Python DJango</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#FFA500] transitiion">
+                    <a href="https://github.com/VaishnaviGitHub12/office-employee-management-system">
+                    <img src="./images/send-icon.png" alt="" class="w-5" >
+                     </a>
+                </div>
+
+            </div>
+
+         </div>
+         <div class="aspect-square bg-[url('./images/weather.jpeg')] bg-no-repeat bg-cover bg bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2-translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Weather App</h2>
+                    <p  class="text-sm text-gray-700">JavaScript</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transitiion">
+                    <a href="https://seetodaysweather.vercel.app/">
+                        <img src="./images/send-icon.png" alt="" class="w-5" >
+                         </a>
+                </div>
+
+            </div>
+
+         </div>
+         <div class="aspect-square bg-[url('./images/photoFinder.png')] bg-no-repeat bg-cover bg bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2-translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Photo Finder</h2>
+                    <p  class="text-sm text-gray-700">HTML, CSS, JavaScript</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transitiion">
+                    <a href="https://foto-finder.vercel.app/">
+                        <img src="./images/send-icon.png" alt="" class="w-5" >
+                         </a>
+                </div>
+
+            </div>
+
+         </div>
+         <div class="aspect-square bg-[url('./images/robo.jpeg')] bg-no-repeat bg-cover bg bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2-translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">RoboSpeaker</h2>
+                    <p  class="text-sm text-gray-700">Python </p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#FFA500] transitiion">
+                    <a href="https://github.com/VaishnaviGitHub12/RoboSpeaker">
+                        <img src="./images/send-icon.png" alt="" class="w-5" >
+                         </a>
+                </div>
+
+            </div>
+
+         </div>
+         <div class="aspect-square bg-[url('./images/e-commerce.jpeg')] bg-no-repeat bg-cover bg bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2-translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Ecommerce Web App</h2>
+                    <p  class="text-sm text-gray-700">MERN Stack</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transitiion">
+                    <a href="https://samyakmart.vercel.app/">
+                        <img src="./images/send-icon.png" alt="" class="w-5" >
+                         </a>
+                </div>
+
+            </div>
+
+         </div>
+         <div class="aspect-square bg-[url('./images/century.png')] bg-no-repeat bg-cover bg bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2-translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Century Science Institute</h2>
+                    <p  class="text-sm text-gray-700">HTML, CSS,JavaScript</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transitiion">
+                    <a href="https://www.centuryscienceinstitute.com/">
+                        <img src="./images/send-icon.png" alt="" class="w-5" >
+                         </a>
+                </div>
+
+            </div>
+
+         </div>
+         <div class="aspect-square bg-[url('./images/todo.jpeg')] bg-no-repeat bg-cover bg bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2-translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">To-Do App</h2>
+                    <p  class="text-sm text-gray-700">JavaScript</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#FFA500] transitiion">
+                    <a href="https://github.com/VaishnaviGitHub12/todo-app">
+                        <img src="./images/send-icon.png" alt="" class="w-5" >
+                         </a>
+                </div>
+
+            </div>
+
+         </div>
+         <div class="aspect-square bg-[url('./images/password.png')] bg-no-repeat bg-cover bg bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2-translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">PassWord Generator</h2>
+                    <p  class="text-sm text-gray-700">HTML, CSS, JavaScript</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transitiion">
+                    <a href="https://password-generator-rl1a.vercel.app/">
+                        <img src="./images/send-icon.png" alt="" class="w-5" >
+                         </a>
+                </div>
+
+            </div>
+
+         </div>
+         <div class="aspect-square bg-[url('./images/galaxy.png')] bg-no-repeat bg-cover bg bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2-translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Galaxy Exports</h2>
+                    <p  class="text-sm text-gray-700">HTML, CSS, JavaScript</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transitiion">
+                    <a href="https://galaxyexportss.com/">
+                        <img src="./images/send-icon.png" alt="" class="w-5" >
+                         </a>
+                </div>
+
+            </div>
+
+         </div>
+         <div class="aspect-square bg-[url('./images/portfolio.png')] bg-no-repeat bg-cover bg bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2-translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">My-old- Portfolio</h2>
+                    <p  class="text-sm text-gray-700">HTML, CSS, JavaScript</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transitiion">
+                    <a href="https://vaishnavigithub12.github.io/MyPortfolio.github.io/">
+                        <img src="./images/send-icon.png" alt="" class="w-5" >
+                         </a>
+                </div>
+
+            </div>
+
+         </div>
+         <div class="aspect-square bg-[url('./images/tiktaktoe.png')] bg-no-repeat bg-cover bg bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2-translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Tik-Tak-Toe</h2>
+                    <p  class="text-sm text-gray-700">HTML, CSS, JavaScript</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transitiion">
+                    <a href="https://tik-tak-toe-vaishnavi.netlify.app/">
+                        <img src="./images/send-icon.png" alt="" class="w-5" >
+                         </a>
+                </div>
+
+            </div>
+
+         </div>
+         <div class="aspect-square bg-[url('./images/snake.jpeg')] bg-no-repeat bg-cover bg bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2-translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Snake-Water-Gun</h2>
+                    <p  class="text-sm text-gray-700">HTML, CSS, JavaScript</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#FFA500] transitiion">
+                    <a href="https://github.com/VaishnaviGitHub12/SnakeWaterGun">
+                        <img src="./images/send-icon.png" alt="" class="w-5" >
+                         </a>
+                </div>
+
+            </div>
+
+         </div>
+    </div>
+    <a href="https://github.com/VaishnaviGitHub12?tab=repositories" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#FFA500] duration-500 dark:text-white dark:hover:bg-darkHover">Show More</a>
+    </div>
+
+<!-- contact me -->
+<div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none">
+    <h4 class="text-center mb-2 text-lg">Contact Me</h4>
+    <h2 class="text-center text-5xl">Get in touch</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I'd love to hear from you! If you have any questions, comments or feedback, please use the form below</p>
+
+    <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+        <input type="hidden" name="access_key" value="c631b98e-5623-4a47-92df-1cfa08676d20">
+        <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+            <input type="text" placeholder="Enter Your Name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90" name="name" required>
+            <input type="email" placeholder="Enter Your E-mail" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90" name="email" required>
+
+        </div>
+        <textarea rows="6" placeholder="Enter Your Message:  " class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-5 dark:bg-darkHover/30 dark:border-white/90" name="message" required></textarea>
+        <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover" >Submit</button>
+    </form>
+</div>
+
+<!---------------footer---------->
+
+<div class="mt-20">
+    <div class="text-center">
+        <img src="./images/VAISHNAVI DHAGE (1).png" alt="" class="w-36 mx-auto mb-2">
+        <div class="w-max flex items-center gap-2 mx-auto">
+            <img src="./images/mail_icon.png" alt="" class="w-6 dark:hidden"
+            >
+            <img src="./images/mail_icon_dark.png" alt="" class="w-6  hidden dark:block" >vaishnavidhage32@gmail.com</a>
+        </div>
+    </div>
+    <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+        <p>@ 2024 Vaishnavi Dhage. </p>
+        <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+            <li><a href="https://github.com/VaishnaviGitHub12" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/vaishnavidhage" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://medium.com/@vaishnavidhage32" target="_blank" rel="noopener noreferrer">Medium</a></li>
+            <li><a href="https://www.instagram.com/_vaishnavi_dhage_/?igsh=amVneHdndTN4dDdt" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>                                
